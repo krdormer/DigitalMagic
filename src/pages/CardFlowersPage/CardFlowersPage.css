@@ -1,0 +1,38 @@
+.card-flower-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.flower {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  position: relative;
+  top: -15vh;
+  right: 0;
+  bottom: 0;
+  left: 4vw;
+  padding: 5%;
+}
+
+.flower-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  position: relative;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 14%;
+  z-index: 50;
+}
+
+.flower-button {
+  width: 15%;
+  height: 60px;
+  border-radius: 100%;
+  border: 10px solid black;
+}

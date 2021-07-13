@@ -1,0 +1,41 @@
+.card-flower {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.one {
+    position: absolute;
+    transform: rotate(10deg);
+}
+
+.two {
+    position: absolute;
+    transform: rotate(30deg);
+}
+
+.three {
+    position: absolute;
+    transform: rotate(50deg);
+}
+
+.four {
+    position: absolute;
+    transform: rotate(70deg);
+}
+
+.five {
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.six {
+    position: absolute;
+    transform: rotate(110deg);
+}
+
+.seven {
+    position: absolute;
+    transform: rotate(130deg);
+}
