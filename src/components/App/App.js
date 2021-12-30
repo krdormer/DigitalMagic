@@ -6,6 +6,8 @@ import CardCascadePage from '../../pages/CardCascadePage/CardCascadePage';
 import Header from '../Header/Header';
 import CardFlowersPage from '../../pages/CardFlowersPage/CardFlowersPage';
 
+// TODO: Remove styled-components after refactor 
+
 const App = () => {
   return (
     <div className="App">

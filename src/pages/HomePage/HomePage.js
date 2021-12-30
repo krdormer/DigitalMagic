@@ -4,12 +4,7 @@ import GameTag from '../../components/GameTag/GameTag';
 import twentyOneCardCascadeImage from '../../assets/twenty_one_card_cascade.png';
 import { Animated } from 'react-animated-css';
 
-import {
-  HomePageStyles,
-  HomePageTitleGreeting,
-  HomePageText,
-  GameButtonContainer,
-} from './HomePage.styles';
+import styles from './styles.module.scss'
 
 const HomePage = () => {
   const [isVisibleFirst, setVisibilityFirst] = useState(false);
@@ -25,14 +20,14 @@ const HomePage = () => {
   }, []);
 
   return (
-    <HomePageStyles className="homepage-title">
-      <HomePageTitleGreeting>
+    <div className={styles.homepage}>
+      <h1 className={styles.homepageTitle}>
         <Animated
           animationIn="fadeInDown"
           isVisible={true}
           animationInDuration={2000}
         >
-          Welcome to...
+          Welcome to
         </Animated>
         <Animated
           animateOnMount={false}
@@ -41,8 +36,8 @@ const HomePage = () => {
         >
           DigitalMagic
         </Animated>
-      </HomePageTitleGreeting>
-      <HomePageText className="homepage-text">
+      </h1>
+      <p className={styles.homepageText}>
         <Animated
           animateOnMount={false}
           animationIn="fadeInUp"
@@ -50,15 +45,15 @@ const HomePage = () => {
         >
           Please select a game below when you are ready to begin!
         </Animated>
-      </HomePageText>
-      <GameButtonContainer>
+      </p>
+      <div className={styles.gameIconContainer}>
         <GameTag
           route={'/card_Cascade'}
           img={twentyOneCardCascadeImage}
           altText={'21 Card Cascade Game'}
         />
-      </GameButtonContainer>
-    </HomePageStyles>
+      </div>
+    </div>
   );
 };
 

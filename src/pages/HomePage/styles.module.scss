@@ -1,25 +1,23 @@
-import styled from 'styled-components';
-
-export const HomePageStyles = styled.div`
+.homepage {
   width: 100vw;
   height: 100vh;
   padding: 0;
   margin-top: 5vh;
   color: #03045e;
-`;
+}
 
-export const HomePageTitleGreeting = styled.h1`
+.homepageTitle {
   font-size: 5.5em;
   text-shadow: 4px 8px rgb(200, 200, 200);
   letter-spacing: 2px;
-`;
+}
 
-export const HomePageText = styled.p`
+.homepageText {
   font-size: 2rem;
   text-shadow: 2px 4px rgb(200, 200, 200);
-`;
+}
 
-export const GameButtonContainer = styled.div`
+.gameIconContainer {
   width: 100%;
   margin-top: 8vh;
-`;
+}
